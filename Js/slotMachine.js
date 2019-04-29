@@ -13,10 +13,8 @@
 class SlothMachine {
   constructor() {
     this.coins = 0;
-    this.ruleta1;
-    this.ruleta2;
-    this.ruleta3;
   }
+  
   play() {
     this.coins++;
     this.ruleta1 = Math.random() < 0.5;
