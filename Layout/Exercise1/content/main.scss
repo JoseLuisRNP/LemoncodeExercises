@@ -1,0 +1,22 @@
+@import 'mixins';
+
+$color: blue;
+.wrapper {
+  display:flex;
+}
+
+div:not(.wrapper){
+  margin: 0.5rem;
+  padding: 0.5rem;
+  height: 20vh;
+  @include darkenizer(1, 4, $color);
+
+  &:nth-child(5) {
+    background-color: $color;
+  }
+
+  @include lightenizer(6, 4, $color)
+}
+
+
+

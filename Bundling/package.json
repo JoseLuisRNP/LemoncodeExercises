@@ -1,0 +1,54 @@
+{
+  "name": "bundling",
+  "version": "1.0.0",
+  "description": "Ejercicio módulo bundling máster Lemoncode",
+  "main": "index.js",
+  "scripts": {
+    "start:dev": "webpack-dev-server --config dev.webpack.config.js --open",
+    "build:dev": "rimraf dist && webpack --config dev.webpack.config.js",
+    "start:prod": "webpack-dev-server --config prod.webpack.config.js --open",
+    "build:prod": "rimraf dist && webpack --config prod.webpack.config.js",
+    "build:perf": "rimraf dist && webpack --config perf.webpack.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JoseLuisRNP/LemoncodeExercises.git"
+  },
+  "author": "José Luis Recio",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JoseLuisRNP/LemoncodeExercises/issues"
+  },
+  "homepage": "https://github.com/JoseLuisRNP/LemoncodeExercises#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.4.4",
+    "@babel/core": "^7.4.4",
+    "@babel/preset-env": "^7.4.4",
+    "@types/react": "^16.8.17",
+    "@types/react-dom": "^16.8.4",
+    "awesome-typescript-loader": "^5.2.1",
+    "babel-loader": "^8.0.6",
+    "css-loader": "^2.1.1",
+    "dotenv-webpack": "^1.7.0",
+    "file-loader": "^3.0.1",
+    "html-loader": "^0.5.5",
+    "html-webpack-plugin": "^3.2.0",
+    "mini-css-extract-plugin": "^0.6.0",
+    "rimraf": "^2.6.3",
+    "sass": "^1.20.1",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.1",
+    "typescript": "^3.4.5",
+    "url-loader": "^1.1.2",
+    "webpack": "^4.31.0",
+    "webpack-bundle-analyzer": "^3.3.2",
+    "webpack-cli": "^3.3.2",
+    "webpack-dev-server": "^3.4.1",
+    "webpack-merge": "^4.2.1"
+  },
+  "dependencies": {
+    "@babel/polyfill": "^7.4.4",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
+  }
+}

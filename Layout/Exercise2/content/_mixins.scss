@@ -1,0 +1,16 @@
+@mixin init {
+  
+  div {
+    width: 6rem;
+    height: 4rem;
+    padding-top: 1rem;
+    padding-left: 1rem;
+    margin: 2px 50px;
+    border: 1px solid gray;
+    font-family: $principalFont;
+  }
+  
+  p{
+    margin-left: 50px;
+  }
+}

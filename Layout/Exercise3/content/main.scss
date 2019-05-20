@@ -1,0 +1,33 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  background-color: pink;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-content: stretch;
+  div {
+    box-sizing: border-box;
+    border-bottom: 3px solid gray;
+    border-top: 1px solid gray;
+    border-right: 1px solid gray;  
+    border-left: 1px solid gray;
+    text-align: center;
+    font-size: 0.6em;
+    flex-grow: 1;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  body {
+    height: 100vh;
+    display: flex; 
+    flex-direction: column;
+    justify-content: space-between;     
+  }
+  .nameCompany {
+    display: none;
+  }
+}

@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css?family=Days+One|Open+Sans');
+@import 'mixins';
+@import 'themeRed';
+//@import 'themeBlue';
+
+
+$principalFont: 'Days one', sans-serif;
+$secondaryFont: 'Open Sans', sans-serif;
+
+@include init;
+
+.principal-font {  
+  font-family: $principalFont;
+
+}
+.secondary-font {
+  font-family: $secondaryFont;
+}
+
+.base {
+  background-color: $base;
+}
+
+.important {
+  background-color: darken($base, 30);
+}
+
+.warning {
+  background-color: lighten($base, 30);
+}
+

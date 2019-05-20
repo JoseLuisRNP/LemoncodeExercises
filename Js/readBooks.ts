@@ -8,7 +8,7 @@ interface Book {
   isRead: boolean;
 }
 
-const isBookRead = (books:Array<Book>, titleToSearch:string): boolean => {
+const isBookRead = (books:Array<Book>, titleToSearch:string) => {
   const bookRead:Book = books.find(book => book.title === titleToSearch);
   return bookRead !== undefined ? bookRead.isRead : false;
 }
