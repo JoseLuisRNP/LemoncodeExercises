@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Text field component specs should display a textfield with when it is feed with props 1`] = `
+<DocumentFragment>
+  <div
+    class="MuiFormControl-root MuiTextField-root MuiFormControl-marginNormal"
+    data-testid="material-textfield"
+  >
+    <label
+      class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiFormLabel-filled"
+      data-shrink="true"
+    >
+      Textfield label
+    </label>
+    <div
+      class="MuiInputBase-root MuiInput-root MuiInput-underline MuiInputBase-formControl MuiInput-formControl"
+    >
+      <input
+        aria-invalid="false"
+        class="MuiInputBase-input MuiInput-input"
+        type="text"
+        value="Textfield value"
+      />
+    </div>
+  </div>
+</DocumentFragment>
+`;
