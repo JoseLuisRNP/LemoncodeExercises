@@ -53,7 +53,9 @@ export const TextField: React.StatelessComponent<
       onBlur={handleBlur}
       error={hasError}
       helperText={hasError && error}
-      data-testid="material-textfield"
+      inputProps={{
+        ['data-testid']: 'material-textfield',
+      }}
     />
   );
 };

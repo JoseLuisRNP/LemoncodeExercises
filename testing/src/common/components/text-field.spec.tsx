@@ -35,22 +35,38 @@ describe('Text field component specs', () => {
     expect(props.onChange).toHaveBeenCalled();
   });
 
-  // it('should call onBlur property when it lose the focus', () => {
-  //   //Arrange
-  //   const props = {
-  //     name: 'Textfield name',
-  //     label: 'Textfiedl label',
-  //     value: 'Textfield value',
-  //     onChange: jest.fn(),
-  //     onBlur: jest.fn(),
-  //   }
-  //   //Act
-  //   const {getByText} = render(<TextField {...props}/>)
-  //   const textFieldElement = getByText(props.label);
-  //   fireEvent.blur(textFieldElement);
-  //   //Assert
-  //   expect(props.onBlur).toHaveBeenCalled();
-  // });
+  it('should call onBlur property when it lose the focus', () => {
+    //Arrange
+    const props = {
+      name: 'Textfield name',
+      label: 'Textfield label',
+      value: 'Textfield value',
+      onChange: jest.fn(),
+      onBlur: jest.fn(),
+    }
+    //Act
+    const {getByTestId} = render(<TextField {...props} />)
+    const textFieldElement = getByTestId('material-textfield');
+    fireEvent.blur(textFieldElement);
+    //Assert
+    expect(props.onBlur).toHaveBeenCalled();
+  });
+
+  it('should appear an error message if error occurs', () => {
+    //Arrange
+    const props = {
+      name: 'Textfield name',
+      label: 'Textfield label',
+      value: 'Textfield value',
+      onChange: jest.fn(),
+      error: 'Validate error',
+    }
+    //Act
+    const {getByText} = render(<TextField {...props}/>);
+    const errorMessage = getByText(props.error);
+    //Assert
+    expect(errorMessage.textContent).toEqual(props.error);
+  })
 
 
 })

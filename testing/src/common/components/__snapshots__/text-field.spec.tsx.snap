@@ -4,7 +4,6 @@ exports[`Text field component specs should display a textfield with when it is f
 <DocumentFragment>
   <div
     class="MuiFormControl-root MuiTextField-root MuiFormControl-marginNormal"
-    data-testid="material-textfield"
   >
     <label
       class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiFormLabel-filled"
@@ -18,6 +17,7 @@ exports[`Text field component specs should display a textfield with when it is f
       <input
         aria-invalid="false"
         class="MuiInputBase-input MuiInput-input"
+        data-testid="material-textfield"
         type="text"
         value="Textfield value"
       />

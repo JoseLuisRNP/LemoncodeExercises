@@ -37,6 +37,7 @@ export const TableComponent: React.FunctionComponent<Props> = props => {
               key={recipe.name}
               className={classes.row}
               onClick={handleNavigation(recipe.id)}
+              data-testid="recipe"
             >
               <TableCell component="th" scope="row">
                 {recipe.name}
